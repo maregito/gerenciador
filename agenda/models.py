@@ -1,0 +1,43 @@
+#-*- coding: utf-8 -*-
+
+from django.db import models
+class ItemAgenda(models.Model):
+    nome = models.CharField(max_length=50)
+    sobrenome = models.CharField(max_length=50)
+    sexo = models.CharField(max_length=10)
+    endereco = models.CharField(max_length=50)
+    numero = models.CharField(max_length=4)
+    bairro = models.CharField(max_length=50)
+    cidade = models.CharField(max_length=50)
+    estado = models.CharField(max_length=50)
+    telefone = models.CharField(max_length=10)
+    celular = models.CharField(max_length=10)
+    nascimento = models.CharField(max_length=10)
+    email = models.CharField(max_length=30)
+    rg = models.CharField(max_length=7)
+    cpf = models.CharField(max_length=11)
+    mae = models.CharField(max_length=50)
+    pai = models.CharField(max_length=50)
+    civil = models.CharField(max_length=20)
+    deficiencia = models.CharField(max_length=50)
+    beneficio = models.CharField(max_length=10)
+    valor = models.CharField(max_length=10)
+    moradia = models.CharField(max_length=50)
+    ncomodos = models.CharField(max_length=50)
+    scomodos = models.CharField(max_length=50)
+    valuguel = models.CharField(max_length=10)
+    terreno = models.CharField(max_length=50)
+    areaHab = models.CharField(max_length=50)
+    esgoto = models.CharField(max_length=50)
+    encanada = models.CharField(max_length=50)
+    membros = models.CharField(max_length=15)
+    renda = models.CharField(max_length=10)
+    respesa = models.CharField(max_length=10)
+    medicamento = models.CharField(max_length=20)
+    profissao = models.CharField(max_length=30)
+    possuiNegocio = models.CharField(max_length=20)
+    situacaoNego = models.CharField(max_length=20)
+    fpam = models.CharField(max_length=20)
+    class Meta:
+        db_table = "tbl_intens_da _agenda"
+
